@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Polo_Amazontech.views import home #importa
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('home/', home) #define a rota
 ]

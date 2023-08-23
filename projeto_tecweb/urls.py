@@ -20,5 +20,5 @@ from Polo_Amazontech.views import home #importa
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', home) #define a rota
+    path('', home) #define a rota quando deixar assim a página index inicial é home 
 ]

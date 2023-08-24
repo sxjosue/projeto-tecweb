@@ -1,15 +1,17 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #B22222;
-    text-align: center;
-    padding: 50px;
+    padding: 15px;
 }
-h1 {color: #ffffff;}
+h1 {color: #ffffff; text-align: center;}
+
 p{color: #ffffff;}
+
 a {
     color: #007BFF;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
     color: #ffffff;

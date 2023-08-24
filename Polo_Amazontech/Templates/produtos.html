@@ -14,6 +14,7 @@
         <h2>CLP (Controlador Lógico Programável)</h2>
         <p><strong>Função:</strong> O CLP é um dispositivo eletrônico digital com uma memória programável para armazenar instruções e implementar funções específicas, como lógica, sequenciamento, temporização, contagem e aritmética, controlando máquinas e processos industriais.</p>
         <p><strong>Consumo:</strong> Varia dependendo do modelo e da aplicação, mas geralmente entre 10W a 50W.</p>
+        <p><strong>Protocolos e redes:</strong> Podem utilizar Profibus e Fieldbus</p>
     </section>
 
     <!-- Informações sobre o cabo industrial -->
@@ -22,14 +23,23 @@
         <p><strong>Função:</strong> Cabos industriais são projetados para transmitir energia e sinais em ambientes industriais, garantindo eficiência e segurança. São resistentes a fatores externos, como óleos, temperaturas extremas e abrasão.</p>
         <p><strong>Consumo:</strong> Não aplicável, pois cabos transmitem, mas não consomem energia.</p>
     </section>
-
     <!-- Informações sobre o sensor capacitivo -->
     <section>
         <h2>Sensor Capacitivo</h2>
         <p><strong>Função:</strong> Sensores capacitivos são usados para detectar materiais não metálicos, como plástico ou líquidos. Eles funcionam medindo mudanças na capacitância de um capacitor. Quando o objeto se aproxima da face do sensor, a capacitância muda e o sensor é acionado.</p>
         <p><strong>Consumo:</strong> Geralmente baixo, em torno de 10mA a 20mA, dependendo do modelo.</p>
+        <p><strong>Protocolos e redes:</strong> Aplicável em especial o AS-I</p>
     </section>
-    
+
+    <section>
+        {% for Produto in Produtos %}
+            <h2>{{Produto.nome}}</h2>
+            <p>{{Produto.descricao}}</p> 
+            <p>{{Produto.consumo}}</p>
+            <p>{{Produto.protocolo}}</p>
+        {% endfor %}
+    </section>
+
     <p>
         <a href="index.html">Voltar</a>
     </p>

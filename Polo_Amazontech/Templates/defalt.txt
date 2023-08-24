@@ -1,0 +1,9 @@
+    <!--
+    <section>
+        {% for Produto in Produtos %}
+            <h2>{{Produto.nome}}</h2>
+            <p>{{Produto.descricao}}</p> 
+            <p>{{Produto.consumo}}</p>
+            <p>{{Produto.protocolo}}</p>
+        {% endfor %}
+    </section>  -->

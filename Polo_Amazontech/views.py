@@ -11,7 +11,5 @@ def produtos(request):
     return render(request, 'produtos.html', data)
 
 def cadastro(request):
-    data = {}
     form = ProdutoForm()
-    data['form'] = form
-    return render(request, 'cadastro.html', form)
+    return render(request, 'cadastro.html', {'form':form})

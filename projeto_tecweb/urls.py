@@ -19,6 +19,6 @@ from django.urls import path
 from Polo_Amazontech.views import home #importa
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', home) #define a rota quando deixar assim a página index inicial é home 
+    path('home/', home), #define a rota quando deixar assim a página index inicial é home 
+    path('admin/', admin.site.urls)
 ]

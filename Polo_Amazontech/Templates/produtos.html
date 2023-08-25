@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="stylesheet" href="{% static 'Polo_Amazontech/default.css' %}">
     <title>Produtos</title>
 </head>
 <body>
     <h1>Componentes Industriais</h1>
 
-    <p>
-        <a href="cadastro.html">Cadastrar novos componentes</a>
-    </p>
+    <a href="{% url 'cadastro' %}">Cadastrar novos componentes</a>
 
     <!-- Informações sobre o CLP -->
     <section>
@@ -35,9 +34,7 @@
         <p><strong>Protocolos e redes:</strong> Aplicável em especial o AS-I</p>
     </section>
 
-    <p>
-        <a href="index.html">Voltar</a>
-    </p>
+    <a href="{% url 'index' %}">Voltar</a>
 
 </body>
 </html>

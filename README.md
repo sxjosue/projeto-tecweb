@@ -7,3 +7,4 @@
 * A fazer: 
     > Criar templates
     > Criar models
+    > Só poderá realizar o cadastro de um novo componente com login (controle de acesso)

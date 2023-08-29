@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="stylesheet" href="{% static 'Polo_Amazontech/default.css' %}">
 </head>
 <body>
     <h1>Tela de login</h1>
     <form action="{% url 'login' %}" method="POST"> {%csrf_token%}
-        <input type="text" placeholder="User name", name="username"><br>
-        <input type="password" placeholder="Senha", name="senha"><br>
+        <input type="text" placeholder="User name", name="username"><br><br>
+        <input type="password" placeholder="Senha", name="senha"><br><br>
         <input type="submit" value="Login"><br>
     </form>
+    <p class="botao" ><a href="{% url 'signup' %}">Sou novo</a></p>
 </body>
 </html>

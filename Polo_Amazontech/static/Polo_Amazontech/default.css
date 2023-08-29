@@ -27,3 +27,8 @@ a:hover {
 form{
     text-align: center; 
 }
+
+input{
+    background-color: #284703;
+    color: #ffffff;
+  }
